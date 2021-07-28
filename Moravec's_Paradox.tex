@@ -1,0 +1,87 @@
+\documentclass[a4paper,10pt]{article} 
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+\setlength{\voffset}{-15pt}
+\usepackage[a4paper, margin=2.5cm]{geometry} 
+\usepackage[onehalfspacing]{setspace} 
+\usepackage[T1]{fontenc} 
+\usepackage[utf8]{inputenc} 
+\usepackage{charter} 
+\usepackage{microtype} 
+\usepackage[english, ngerman]{babel} 
+\usepackage{amsthm, amsmath, amssymb} 
+\usepackage{marvosym, wasysym} 
+\usepackage{float} 
+\usepackage[final, colorlinks = true, 
+            linkcolor = black, 
+            citecolor = black,
+            urlcolor = black]{hyperref} 
+\usepackage{graphicx, multicol} 
+\usepackage{xcolor} 
+\usepackage{rotating} 
+\usepackage{listings, style/lstlisting}
+\usepackage{pseudocode} 
+\usepackage{style/avm} 
+\usepackage{booktabs} 
+\usepackage{tikz-qtree} 
+\tikzset{every tree node/.style={align=center,anchor=north},
+         level distance=2cm} 
+\usepackage{style/btree} 
+\usepackage{titlesec} 
+\renewcommand\thesection{\arabic{section}.} 
+\titleformat{\section}{\large}{\thesection}{1em}{}
+\renewcommand\thesubsection{\alph{subsection})} 
+\titleformat{\subsection}{\large}{\thesubsection}{1em}{}
+\renewcommand\thesubsubsection{\roman{subsubsection}.}
+\titleformat{\subsubsection}{\large}{\thesubsubsection}{1em}{}
+\usepackage[all]{nowidow} 
+\usepackage[backend=biber,style=numeric,
+            sorting=nyt, natbib=true]{biblatex}
+\addbibresource{main.bib}
+\usepackage{csquotes} 
+\usepackage[yyyymmdd]{datetime} 
+\renewcommand{\dateseparator}{-} 
+\usepackage{fancyhdr} 
+\pagestyle{fancy} 
+\fancyhead{}\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\textsc{ModuleShorthand00}} 
+\fancyfoot[C]{}
+\fancyfoot[R]{\thepage} 
+\newcommand{\note}[1]{\marginpar{\scriptsize \textcolor{red}{#1}}} 
+\begin{document}
+\title{template_assignment} 
+\fancyhead[C]{}
+\begin{minipage}{0.295\textwidth} 
+\raggedright
+NIT RAIPUR\\ 
+\footnotesize 
+Anikesh Jhadi,19111007 
+\medskip\hrule
+\end{minipage}
+\begin{minipage}{0.4\textwidth} 
+\centering 
+\large 
+Assignment 03\\ 
+\normalsize 
+Moravec's Paradox\\ 
+\end{minipage}
+\begin{minipage}{0.295\textwidth} 
+\raggedleft
+\today\\ 
+\footnotesize 
+jhadianikesh@gmail.com
+\medskip\hrule
+\end{minipage}
+\section{Introduction}
+Moravec's paradox is the observation by artificial intelligence and robotics researchers that  reasoning requires very little computation, but sensorimotor skills require enormous computational resources.The principle was articulated by Hans Moravec, Rodney Brooks, Marvin Minsky and some others.According to Moravec "it is comparatively easy to make computers exhibit adult level performance on intelligence tests or playing checkers, and difficult or impossible to give them the skills of a one-year-old when it comes to perception and mobility". Similarly, Minsky emphasized "we're more aware of simple processes that don't work well than of complex ones that work flawlessly".
+\section{The biological basis of human skills}
+Moravec offered an explaination based on evolution.All human skills are implemented biologically using machinery design by process of natural selection.The older a skill is, the more time natural selection has had to improve the design. 
+A compact way to express this argument would be that we should expect the difficulty of reverse-engineering any human skill to be roughly proportional to the amount of time that skill has been evolving in animals.The oldest human skills are largely unconscious and so appear to us to be effortless.
+Some examples of skills that have been evolving for millions of years: recognizing a face, moving around in space, judging people's motivations, catching a ball, recognizing a voice, setting appropriate goals, paying attention to things that are interesting; anything to do with perception, attention, visualization, motor skills, social skills and so on whereas examples of skills that have appeared more recently: mathematics, engineering, games, logic and scientific reasoning. These are hard for us because they are not what our bodies and brains were primarily evolved to do. These are skills and techniques that were acquired recently, in historical time, and have had at most a few thousand years to be refined, mostly by cultural evolution.
+\section{Historical influence on artificial intelligence}
+In early days,researchers optimism stemmed in part from the fact that they had been successful at writing programs that used logic, solved algebra and geometry problems and played games like checkers and chess. Logic and algebra are difficult for people and are considered a sign of intelligence. Many prominent researchers assumed that, having (almost) solved the "hard" problems, the "easy" problems of vision and commonsense reasoning would soon fall into place. They were wrong, and one reason is that these problems are not easy at all, but incredibly difficult. The fact that they had solved problems like logic and algebra was irrelevant, because these problems are extremely easy for machines to solve.
+
+\textbf{}
+\\ Rodney Brooks explains that  intelligence was "best characterized as the things that highly educated male scientists found challenging", such as chess, symbolic integration, proving mathematical theorems and solving complicated word algebra problems. "The things that children of four or five years could do effortlessly, such as visually distinguishing between a coffee cup and a chair, or walking around on two legs, or finding their way from their bedroom to the living room were not thought of as activities requiring intelligence."This would lead Brooks to pursue a new direction in artificial intelligence and robotics research. He decided to build intelligent machines that had "No cognition. Just sensing and action.
+
+\end{document}
